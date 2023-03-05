@@ -1,6 +1,7 @@
-let Frase = prompt('Ingrese una frase')
-let cadena = [];
+let cadena = '';
 
-while(confirm('Desea seguir ingresando frases?')){
-
+while(confirm('Le interesa formar una cadena')=== true){
+    let frase = prompt('Ingrese una frase')
+    cadena = cadena + frase;
 }
+document.write(cadena);
