@@ -1,22 +1,49 @@
-let nota = parseInt(prompt('Ingrese una calificacion'));
+let nota = prompt('Ingrese una calificacion');
 if(nota >=0){
 if(nota <=10 ){
     if(nota >=0 && nota <=2){
-        alert('Muy deficiente');
+        
     }else if(nota >=3 && nota <=4){
-        alert('Insuficiente');
+        
     }else if(nota >=5 && nota <=6){
         alert('Suficiente');
     }else if(nota === 7){
-        alert('Bien');
+        
     }else if(nota >=8 && nota <=9){
         alert('Notable');
     }else {
-        alert('Sobresaliente');
+        
     }
 }else{
-    alert('numero erroneo');
+    
 }
 }else{
     alert('Introduce un numero invalido')
+}
+switch(nota){
+    case '0':
+    case '1':
+    case '2':
+        alert('Muy deficiente');
+        break;
+    case '3':
+    case '4':
+        alert('Insuficiente');
+        break;
+    case '5':
+    case '6':
+        alert('Suficiente');
+        break;
+    case '7':
+        alert('Bien');
+        break;
+    case'8':
+    case '9':
+        alert('Notable');
+        break;
+    case '10':
+        alert('Sobresaliente');
+        break;
+    default:
+        alert('numero erroneo');
 }
