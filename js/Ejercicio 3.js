@@ -1,6 +1,6 @@
 let cadena = '';
 
-while(confirm('Le interesa formar una cadena')=== true){
+while(confirm('Le interesa formar una cadena')){
     let frase = prompt('Ingrese una frase')
     cadena = cadena + frase;
 }
